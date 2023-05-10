@@ -1,0 +1,25 @@
+--- 
+title: "The Five Pillars of Islam"
+author: "Diwan of Royal Court Sultan Qaboos Centre for Islamic Culture"
+site: bookdown::bookdown_site
+documentclass: book
+bibliography: [book.bib, packages.bib]
+link-citations: yes
+---
+
+```{r, eval=FALSE}
+bookdown::render_book()
+```
+
+
+```{r eval=FALSE}
+bookdown::serve_book()
+```
+
+
+```{r include=FALSE}
+# automatically create a bib database for R packages
+knitr::write_bib(c(
+  .packages(), 'bookdown', 'knitr', 'rmarkdown'
+), 'packages.bib')
+```
